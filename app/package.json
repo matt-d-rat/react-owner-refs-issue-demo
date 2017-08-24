@@ -1,0 +1,25 @@
+{
+  "name": "npm-peer-test-app",
+  "version": "1.0.0",
+  "description": "An example app to demonstrate how a react app which depends on modules (which also depend on react) should handle react as a node dep",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js",
+    "build": "webpack --config ./webpack.config.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Fairbrass <matt.fairbrass@mongodb.com>",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
