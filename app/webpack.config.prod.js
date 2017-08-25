@@ -15,7 +15,11 @@ module.exports = {
 	},
 	resolve: {
 		modules: ['node_modules'],
-		extensions: ['.js', '.jsx']
+		extensions: ['.js', '.jsx'],
+		alias: {
+			'react': path.resolve(__dirname, 'node_modules/react'),
+			'react-dom': path.resolve(__dirname, 'node_modules/react-dom')
+		}
 	},
 	module: {
 		rules: [
