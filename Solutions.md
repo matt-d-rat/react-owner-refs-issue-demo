@@ -2,7 +2,7 @@
 
 The following solution branches exist to demonstrate how this problem can be solved in a number of different ways. Each solution is self-contained on a seperate `solution/` branch. Checkout the branch and follow the instructions below to see the results.
 
-## Solution - Webpack Resolve Alias
+## Solution - [Preferred long-run] Webpack Resolve Alias
 
 ### Running the Solution
 
@@ -46,7 +46,7 @@ import ReactDOM from 'react-dom'
 
 - __Requires Webpack__ - Base project (ie: `app`) has to be running with a webpack build.
 
-## Solution - NPM Link React and ReactDOM
+## Solution - [Use short run for rapid development, if it works] NPM Link React and ReactDOM
 
 ### Running the Solution
 
@@ -79,3 +79,18 @@ cd /path/to/react-owner-refs-issue-demo
 
 - __Manual Process__ - Requires a manual setup and teardown process, npm linking `react` and `react-dom` into all npm dependencies which exhibit the problem.
 - __Dependency Rabbit Hole__ - Particularly bad if you have one or more sub-dependencies which also depend on shared sub-dependencies. Requiring you to also `npm link` those so that they are also using the same `react` and `react-dom` deps as `app`.
+
+## Solution - [Use for changes you're reasonably sure of] Create a release candidate version
+
+i.e.
+```
+npm version premajor
+npm version preminor
+npm version prepatch
+```
+
+https://docs.npmjs.com/cli/version
+
+
+Reasoning for these recommendations from [@rueckstiess](https://github.com/rueckstiess/):
+![https://xkcd.com/1205/](https://imgs.xkcd.com/comics/is_it_worth_the_time.png)
