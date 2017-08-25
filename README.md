@@ -42,7 +42,7 @@ A handy installation script has been provided to get you up and running. The `se
 Once You have cloned the project simply run:
 
 ```
-cd /path/to/npm-peer-test
+cd /path/to/react-owner-refs-issue-demo
 ./setup.sh
 ```
 
@@ -55,7 +55,7 @@ chmod +x setup.sh
 ### Running the app (dev)
 
 ```
-cd /path/to/npm-peer-test/app
+cd /path/to/react-owner-refs-issue-demo/app
 npm start
 ```
 
@@ -66,7 +66,7 @@ Navigate to [http://localhost:8080/](http://localhost:8080/) in your browser.
 #### Module A
 
 ```
-cd /path/to/npm-peer-test/module-a
+cd /path/to/react-owner-refs-issue-demo/module-a
 npm start
 ```
 
@@ -75,7 +75,7 @@ Navigate to [http://localhost:8081/](http://localhost:8081/) in your browser.
 #### Module B
 
 ```
-cd /path/to/npm-peer-test/module-b
+cd /path/to/react-owner-refs-issue-demo/module-b
 npm start
 ```
 
@@ -84,7 +84,7 @@ Navigate to [http://localhost:8082/](http://localhost:8082/) in your browser.
 #### Module C
 
 ```
-cd /path/to/npm-peer-test/module-c
+cd /path/to/react-owner-refs-issue-demo/module-c
 npm start
 ```
 
@@ -95,7 +95,7 @@ Navigate to [http://localhost:8083/](http://localhost:8083/) in your browser.
 In any of the sub-directories run `npm run build` to build a production bundle of that thing. For example:
 
 ```
-cd /path/to/npm-peer-test/module-a
+cd /path/to/react-owner-refs-issue-demo/module-a
 npm run build
 ```
 
