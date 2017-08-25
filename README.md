@@ -19,7 +19,9 @@ app/
 When using refs in React, __all refs__ must be for the same instance of React. Otherwise you'll end up with the following [exception](https://facebook.github.io/react/warnings/refs-must-have-owner.html) being thrown causing your app to crash and burn 🔥:
 
 ```
-Uncaught Error: addComponentAsRefTo(...): Only a ReactOwner can have refs. You might be adding a ref to a component that was not created inside a component's `render` method, or you have multiple copies of React loaded (details: https://fb.me/react-refs-must-have-owner).
+Uncaught Error: addComponentAsRefTo(...): Only a ReactOwner can have refs.
+You might be adding a ref to a component that was not created inside a component's `render` method,
+or you have multiple copies of React loaded (details: https://fb.me/react-refs-must-have-owner).
 ```
 
 This is being demonstrated by `Module B` having a ref.
@@ -30,7 +32,14 @@ The `master` branch represents the problem, and the `solution/` branches represe
 
 ### Installation
 
-A handy installation script has been provided to get you up and running. Once You have cloned the project simply run:
+A handy installation script has been provided to get you up and running. The `setup.sh` script will do the following:
+
+1. Install npm dependencies in app and all sub-modules.
+2. Create global npm links for all sub-modules.
+3. `npm link` all sub-modules into `app`, and link `module-b` into `module-c`.
+4. Run a production build for all sub-modules.
+
+Once You have cloned the project simply run:
 
 ```
 cd /path/to/npm-peer-test
@@ -42,13 +51,6 @@ If the script does not have the correct permissions to be executed, run the foll
 ```
 chmod +x setup.sh
 ```
-
-The `setup.sh` script will do the following:
-
-1. Install npm dependencies in app and all sub-modules.
-2. Create global npm links for all sub-modules.
-3. `npm link` sub-modules into app and link `module-b` into `module-c`
-4. Run a production build for all sub-modules.
 
 ### Running the app (dev)
 

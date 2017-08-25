@@ -1,5 +1,6 @@
 {
   "name": "npm-peer-test-app",
+  "private": true,
   "version": "1.0.0",
   "description": "An example app to demonstrate how a react app which depends on modules (which also depend on react) should handle react as a node dep",
   "main": "dist/index.js",

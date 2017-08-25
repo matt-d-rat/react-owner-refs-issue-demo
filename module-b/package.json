@@ -1,5 +1,6 @@
 {
   "name": "npm-peer-test-module-b",
+  "private": true,
   "version": "1.0.0",
   "description": "A module depended on by npm-peer-test-app which depends on react itself as well.",
   "main": "lib/index.js",
