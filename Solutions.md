@@ -66,7 +66,7 @@ This results in all modules having the same instance of React and ReactDOM as `a
 __Important:__ When you're finished looking at this solition, run `./solution-teardown.sh` from the root of the project to undo the solution setup.
 
 ```
-cd /path/to/npm-peer-test
+cd /path/to/react-owner-refs-issue-demo
 ./solution-teardown.sh
 ```
 
