@@ -90,7 +90,7 @@ npm start
 
 Navigate to [http://localhost:8083/](http://localhost:8083/) in your browser.
 
-## Building
+### Building
 
 In any of the sub-directories run `npm run build` to build a production bundle of that thing. For example:
 
@@ -98,3 +98,7 @@ In any of the sub-directories run `npm run build` to build a production bundle o
 cd /path/to/npm-peer-test/module-a
 npm run build
 ```
+
+## Solutions
+
+The solutions to this problem can be found on isolated solution branches (prefixed with `solution/`). See the [Solutions document](./Solutions.md) for branch details and a detailed explanation to each solution.
